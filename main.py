@@ -22,6 +22,10 @@ async def command_start_handler(message: Message) -> None:
 async def command_salom_handler(message: Message) -> None:
     await message.answer("Salom! Men 24/7 Telegram Botman!.")
 
+@dp.message(Command("hayr"))
+async def command_salom_handler(message: Message) -> None:
+    await message.answer("Uyga Bor!.")
+
 
 # Run the bot
 async def main() -> None:
